@@ -1,64 +1,64 @@
-import ApolloClient, { gql } from "apollo-boost";
-import { ApolloProvider } from "react-apollo";
-import { Query } from "react-apollo";
 
-import React from "react";
-import ReactDOM from "react-dom";
+import ReactDom from 'react-dom'
+import React from 'react'
+import '../tailwind/tailwind.css'
+/*
+import grid from './grid.module.css' 
+import {ItemA} from './componentesmasimportantes/item-a.js'
+import {Itemb} from './componentesmasimportantes/itemb'
+import {Itemc} from './componentesmasimportantes/itemc'
+import { useState, useEffect } from 'react'
+*/
+import Carlos from'./ramdom/context'
 
-import './app.css'
+ReactDom.render(
+	<Carlos/>,
+	document.getElementById('root')
+)
 
-import Car from './componentes/boton.js'
-import './style.scss'
 
-const client = new ApolloClient({
-  uri: "https://rickandmortyapi.com/graphql"
-});
-
-const CharactersQuery = () => {
-  return (
-    <Query
-      query={gql`
-      {
-        characters {
-          results {
-            id
-            name
-          }
-        }
+/*
+function Contador() {
+	// Declara una nueva variable de estado, que llamaremos "count".
+	const [count, setCount] = useState(0)
+	const [otro, cambiaotro] = useState(true)
+	// Similar a componentDidMount y componentDidUpdate:
+	useEffect(() => {
+		// Actualiza el título del documento usando la Browser API
+		document.title = ` ${count} jeej`
+	},[otro])
+	return (
+		<div>
+			<p>You clicked {count} times</p>
+			<button onClick={() => setCount(count + 1)}>
+        Click me
+			</button>
+			<p>actualizar</p>
+			<button onClick={() => cambiaotro(!otro)}>
+        Click me
+			</button>
+		</div>
+	)
+}
+/*
+function Example() {
+  // Declara una nueva variable de estado, la cual llamaremos “count”
+  const pendejada = {
+    "name":{
+      "mare":{
+        pendejo:"svelte es mejor"
       }
-      `}
-    >
-      {({ loading, error, data }) => {
-        if (loading) return <p>Loading...</p>;
-        if (error) return <p>Error :(</p>;
-
-        return data.characters.results.map(character => (
-          <p key={character.id}>
-            {character.name}<br/>
-          </p>
-        ));
-      }}
-    </Query>
-  );
-};
-
-function App() {
+    }
+  }
   return (
-    <div className="App">
-      <h1>HOLA pendejos</h1>
-      <CharactersQuery />
+    <div className={grid.container}>
+      <ItemA/>
+      <Itemb/>
+      <Itemc/>
+      <Contador/>
     </div>
   );
-}
+}*/
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(
-  <ApolloProvider client={client}>
-    <App />
-  </ApolloProvider>,
-  rootElement
-);
-ReactDOM.render(
-  <Car/>,
-  rootElement
-);
+
+

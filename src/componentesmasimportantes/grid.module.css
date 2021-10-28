@@ -1,0 +1,5 @@
+.itemc{
+    display: grid;
+    grid-template-columns: 50px 50px 50px auto 50px;
+    grid-template-rows: auto;
+}

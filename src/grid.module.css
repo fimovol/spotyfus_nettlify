@@ -1,0 +1,25 @@
+.container{
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    grid-template-rows: 28px 220px 285px 65px;
+}
+.itema {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.itemb {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.itemc {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}

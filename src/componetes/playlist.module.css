@@ -1,0 +1,9 @@
+.estilo{
+    font-size: 1.1em;
+    color:cornflowerblue;
+    margin-top: 7px;
+    margin-left: 12px;
+}
+.estilo:hover{
+    color:coral
+}

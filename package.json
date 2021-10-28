@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "tal": "tailwindcss init",
+    "lint": "eslint --init",
     "build": "webpack --mode production",
     "dev": " webpack serve --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,24 +14,30 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/preset-react": "^7.12.13",
-    "apollo-boost": "^0.4.9",
-    "babel-loader": "^8.2.2",
-    "css-loader": "^5.0.2",
-    "file-loader": "^6.2.0",
-    "graphql": "^15.5.0",
-    "html-webpack-plugin": "^5.1.0",
-    "react-apollo": "^3.1.5",
-    "sass": "^1.32.7",
-    "sass-loader": "^11.0.1",
-    "style-loader": "^2.0.0",
-    "webpack": "^5.21.2",
-    "webpack-cli": "^4.5.0",
-    "webpack-dev-server": "^3.11.2"
+    "@babel/core": "7.12.16",
+    "@babel/preset-react": "7.12.13",
+    "apollo-boost": "0.4.9",
+    "babel-loader": "8.2.2",
+    "css-loader": "5.0.2",
+    "eslint": "7.32.0",
+    "eslint-plugin-react": "7.26.1",
+    "file-loader": "6.2.0",
+    "graphql": "15.5.0",
+    "html-webpack-plugin": "5.1.0",
+    "postcss-cli": "9.0.1",
+    "postcss-loader": "6.1.1",
+    "react-apollo": "3.1.5",
+    "sass": "1.32.7",
+    "sass-loader": "11.0.1",
+    "style-loader": "2.0.0",
+    "tailwindcss": "^2.2.16",
+    "webpack": "5.51.1",
+    "webpack-cli": "4.5.0",
+    "webpack-dev-server": "3.11.2"
   },
   "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "jquery": "3.6.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   }
 }
